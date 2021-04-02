@@ -27,13 +27,14 @@ namespace AnimalShelter.Controllers
     [HttpPost]
     public async Task<ActionResult<Cat>> Post(Cat cat)
     {
+      cat.DateAdded = DateTime.Now;
       _db.Cats.Add(cat);
       await _db.SaveChangesAsync();
 
       return CreatedAtAction("Post", new { id = cat.CatId }, cat);
     }
 
-    [HttpGet("{id")]
+    [HttpGet("{id}")]
     public async Task<ActionResult<Cat>> GetCat(int id)
     {
       var cat = await _db.Cats.FindAsync(id);
@@ -44,7 +45,7 @@ namespace AnimalShelter.Controllers
       return cat;
     }
 
-    [HttpPut("{id")]
+    [HttpPut("{id}")]
     public async Task<IActionResult> Put(int id, Cat cat)
     {
       if (id != cat.CatId)
@@ -68,6 +69,19 @@ namespace AnimalShelter.Controllers
           throw;
         }
       }
+      return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteCat(int id)
+    {
+      var cat = await _db.Cats.FindAsync(id);
+      if (cat == null)
+      {
+        return NotFound();
+      }
+      _db.Cats.Remove(cat);
+      await _db.SaveChangesAsync();
       return NoContent();
     }
 
