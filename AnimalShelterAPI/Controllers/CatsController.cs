@@ -48,11 +48,10 @@ namespace AnimalShelter.Controllers
     [HttpPut("{id}")]
     public async Task<IActionResult> Put(int id, Cat cat)
     {
-      // if (id != cat.CatId)
-      // {
-      //   Console.WriteLine("BAD REQ");
-      //   return BadRequest();
-      // }
+      if (id != cat.CatId)
+      {
+        return BadRequest();
+      }
       _db.Entry(cat).State = EntityState.Modified;
 
       try
