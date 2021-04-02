@@ -9,6 +9,8 @@ namespace AnimalShelter.Models
     {
     }
 
-    public DbSet<Animal> Animals { get; set; }
+    public DbSet<OtherAnimal> OtherAnimals { get; set; }
+    public DbSet<Cat> Cats { get; set; }
+    public DbSet<Dog> Dogs { get; set; }
   }
 }
