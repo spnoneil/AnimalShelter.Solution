@@ -3,10 +3,13 @@ using System;
 
 namespace AnimalShelter.Models
 {
-  public class Animal
+  public class OtherAnimal
   {
-    public int AnimalId { get; private set; }
+    public int OtherAnimalId { get; private set; }
     public string Type { get; set; }
+    public int Age { get; set; }
+    public string Gender { get; set; }
+    
     public DateTime DateAdded { get; set; }
   }
 }
