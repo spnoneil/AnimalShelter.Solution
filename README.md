@@ -31,14 +31,16 @@ _A simple API, created for an Epicodus Coding School code review to practice/sho
   }
 }
 ```
-* _Now, while still in the `AnimalShelterAPI` directory, and update the database with the command `dotnet ef database update` in the terminal_
+* _Now, while still in the `AnimalShelterAPI` directory, update the database with the command `dotnet ef database update` in the terminal_
 * _Still in the terminal, enter `dotnet restore`._
 * _Next, enter `dotnet build`_
 * _Then, enter `dotnet run`_
 * _Finally, in browser of choice, navigate to `http://localhost:5000`_
-* _Now you're ready to head back to `http://localhost:5000` and to view API Swagger page_
+* _Now you're ready to head back to `http://localhost:5000` to view the API Swagger page_
 
-
+## API Endpoints
+* _The URI endpoints look something like `api/{controller}/{id}`, with "{controller}" = "dogs", "cats", or "otheranimals", and "{id}" only being necessary to view individual datasets. These endpoints will be displayed as JSON objects_
+* _It is **STRONGLY** recommended to utilize the Swagger utility, found at `http://localhost:5000` upon successful project run. This is the most straightforward way to use all CRUD functionality at present_
 ## Technologies Used
 
 * _C# / .NET 5.0 SDK / ASP .NET Core_
@@ -50,9 +52,10 @@ _A simple API, created for an Epicodus Coding School code review to practice/sho
 
 ## Known Bugs
 
-* _No known bugs_
+* _Versioning not currently working_
 
 ## Future implementation
+* _Get versioning working_
 * _Front end, full MVC implementation_
 * _Styling_
 
