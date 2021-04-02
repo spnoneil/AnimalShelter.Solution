@@ -9,7 +9,8 @@ using System;
 namespace AnimalShelter.Controllers
 {
   [ApiController]
-  [ApiVersion("1.0")] 
+  [ApiVersion("1.0")]
+  [ApiVersion("1.1")]
   [Route("api/[controller]")]
 
   public class CatsController : ControllerBase
