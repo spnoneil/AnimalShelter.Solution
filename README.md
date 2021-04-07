@@ -56,7 +56,7 @@ _**EF Core Method**_:
 <br>
 <img src="https://media.giphy.com/media/axjuE6LMXhA5wSYD5C/giphy.gif" width=300>
 
-_Example of successful GET api/{controller}/{id} call:_
+_Example of successful GET api/{controller}/{id} call_:
 ```  
    {
         "dogId": 1,
