@@ -52,7 +52,9 @@ _**EF Core Method**_:
 * _It is **STRONGLY** recommended to utilize the Swagger utility, found at `http://localhost:5000` upon successful project run. This is the most straightforward way to use all CRUD functionality at present_
 <br>
 <br>
- _Example of routes in Swagger:_
+
+_Example of routes in Swagger:_
+
 <br>
 <img src="https://media.giphy.com/media/axjuE6LMXhA5wSYD5C/giphy.gif" width=300>
 
