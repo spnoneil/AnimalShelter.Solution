@@ -20,9 +20,8 @@ _A simple API, created for an Epicodus Coding School code review to practice/sho
 
 #### Database Setup
 
-_**Manual Method**:_
+_**Manual Method**_:
 * _Download MySQL Workbench [here](https://dev.mysql.com/downloads/workbench/)_
-<br>
 * _After a successful install and setup, in the Administration tab in the GUI, hit "Data Import/Restore", followed by clicking "Import from Self-Contained File", and navigate to the included `scott_oneil.sql` dump structure file_
 * _Click "Start Import"_
 * _Next, in the directory of `AnimalShelterAPI`, create a file called `appsettings.json` and input the following, with "YOUR-PASSWORD-HERE" being the password you set up with MySQL workbench:_
@@ -33,7 +32,7 @@ _**Manual Method**:_
   }
 }
 ```
-_**EF Core Method:**_
+_**EF Core Method**_:
 * _Install the dotnet CLI tools by inputting `dotnet tool install --global dotnet-ef` in the terminal.
 * _While still in the `AnimalShelterAPI` directory, update the database with the command `dotnet ef database update` in the terminal_
 * _Still in the terminal, enter `dotnet restore`._
