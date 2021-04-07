@@ -54,7 +54,7 @@ _**EF Core Method:**_
 <br>
 <br>
  _Example of routes in Swagger:_
- <br>
+<br>
 ![Swagger documentation](https://media.giphy.com/media/axjuE6LMXhA5wSYD5C/giphy.gif)
 
 _Example of successful GET api/{controller}/{id} call:_
